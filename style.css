@@ -1,0 +1,76 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #1f1c2c, #928DAB);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Parent Container */
+.parent {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    width: 320px;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Heading */
+.item1 h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #00fff0;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* Result Emoji */
+#result {
+    font-size: 90px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    animation: pulse 1s infinite alternate;
+}
+
+/* Button Styling */
+#game {
+    background: linear-gradient(135deg, #00bcd4, #2196f3);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+#game:hover {
+    background: linear-gradient(135deg, #2196f3, #00bcd4);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+}
+
+/* Emoji Pulse Animation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    to {
+        transform: scale(1.1);
+        filter: brightness(1.3);
+    }
+}
